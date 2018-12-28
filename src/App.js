@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-
+import Header from '../src/components/header';
 class App extends Component {
   render() {
     return (
       <div>
+      <Header/>
 
       <section id="books-section">
         <div className="container">
