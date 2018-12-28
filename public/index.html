@@ -10,6 +10,9 @@
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -29,13 +32,13 @@
     <header id="header">
       <div class="container" id="">
           <nav>
-              <a href="#">LOGO</a>
+              <a href="#" class="logo"><i class="fas fa-book-open"></i></a>
               <ul class="categories">
-                <li><a href="#">HTML</a></li>
+                <li class="active"><a href="#">HTML</a></li>
                 <li><a href="">CSS</a></li>
                 <li><a href="">JAVASCRIPT</a></li>
-                <li><a href=""></a>REACT</li>
-                <li><a href=""></a>NODEJS</li>
+                <li><a href="">REACT</a></li>
+                <li><a href="">NODEJS</a></li>
               </ul>
           </nav>
       </div>
@@ -46,95 +49,74 @@
     <section id="books-section">
       <div class="container">
           <div class="section-title">
-              <h1>HTML BOOKS</h1>
-            </div>
-            <div class="books-container">
-                <div class="book">
-                    <div class="book-img">
-                      <img src="https://via.placeholder.com/250x200" alt="">
-                    </div>
-                    <div class="book-title">
-                      <h3>Book title</h3>
-                    </div>
-                    <div class="book-author">
-                      <p><em>Author</em></p>
-                    </div>
-                    <div class="book-call-to-action">
-                       <button class="btn btn-highlight">Detail</button> 
-                    </div>
-                </div>
-                <div class="book">
-                    <div class="book-img">
-                      <img src="https://via.placeholder.com/250x200" alt="">
-                    </div>
-                    <div class="book-title">
-                      <h3>Book title</h3>
-                    </div>
-                    <div class="book-author">
-                      <p><em>Author</em></p>
-                    </div>
-                    <div class="book-call-to-action">
-                       <button class="btn btn-highlight">Detail</button> 
-                    </div>
-                </div>
-                <div class="book">
-                    <div class="book-img">
-                      <img src="https://via.placeholder.com/250x200" alt="">
-                    </div>
-                    <div class="book-title">
-                      <h3>Book title</h3>
-                    </div>
-                    <div class="book-author">
-                      <p><em>Author</em></p>
-                    </div>
-                    <div class="book-call-to-action">
-                       <button class="btn btn-highlight">Detail</button> 
-                    </div>
-                </div>
-                <div class="book">
-                    <div class="book-img">
-                      <img src="https://via.placeholder.com/250x200" alt="">
-                    </div>
-                    <div class="book-title">
-                      <h3>Book title</h3>
-                    </div>
-                    <div class="book-author">
-                      <p><em>Author</em></p>
-                    </div>
-                    <div class="book-call-to-action">
-                       <button class="btn btn-highlight">Detail</button> 
-                    </div>
-                </div>
-                <div class="book">
-                    <div class="book-img">
-                      <img src="https://via.placeholder.com/250x200" alt="">
-                    </div>
-                    <div class="book-title">
-                      <h3>Book title</h3>
-                    </div>
-                    <div class="book-author">
-                      <p><em>Author</em></p>
-                    </div>
-                    <div class="book-call-to-action">
-                       <button class="btn btn-highlight">Detail</button> 
-                    </div>
-                </div>
-                <div class="book">
-                    <div class="book-img">
-                      <img src="https://via.placeholder.com/250x200" alt="">
-                    </div>
-                    <div class="book-title">
-                      <h3>Book title</h3>
-                    </div>
-                    <div class="book-author">
-                      <p><em>Author</em></p>
-                    </div>
-                    <div class="book-call-to-action">
-                       <button class="btn btn-highlight">Detail</button> 
-                    </div>
-                </div>
-            </div>
-            
+            <h1>HTML BOOKS</h1>
+          </div>
+          <div class="books-container">
+              <div class="book">
+                  <div class="book-img">
+                    <img src="https://via.placeholder.com/250x200" alt="">
+                  </div>
+                  <div class="book-info">
+                      <div class="book-title">
+                        <h3>Book title</h3>
+                      </div>
+                      <div class="book-author">
+                        <p><em>By Author</em></p>
+                      </div>
+                      <div class="book-call-to-action">
+                          <button class="btn btn-highlight">Detail</button> 
+                      </div>
+                  </div>
+              </div>
+              <div class="book">
+                  <div class="book-img">
+                    <img src="https://via.placeholder.com/250x200" alt="">
+                  </div>
+                  <div class="book-info">
+                      <div class="book-title">
+                        <h3>Book title</h3>
+                      </div>
+                      <div class="book-author">
+                        <p><em>By Author</em></p>
+                      </div>
+                      <div class="book-call-to-action">
+                          <button class="btn btn-highlight">Detail</button> 
+                      </div>
+                  </div>
+              </div>
+              <div class="book">
+                  <div class="book-img">
+                    <img src="https://via.placeholder.com/250x200" alt="">
+                  </div>
+                  <div class="book-info">
+                      <div class="book-title">
+                        <h3>Book title</h3>
+                      </div>
+                      <div class="book-author">
+                        <p><em>By Author</em></p>
+                      </div>
+                      <div class="book-call-to-action">
+                          <button class="btn btn-highlight">Detail</button> 
+                      </div>
+                  </div>
+              </div>
+              <div class="book">
+                  <div class="book-img">
+                    <img src="https://via.placeholder.com/250x200" alt="">
+                  </div>
+                  <div class="book-info">
+                      <div class="book-title">
+                        <h3>Book title</h3>
+                      </div>
+                      <div class="book-author">
+                        <p><em>By Author</em></p>
+                      </div>
+                      <div class="book-call-to-action">
+                          <button class="btn btn-highlight">Detail</button> 
+                      </div>
+                  </div>
+              </div>
+          </div>     
       </div>
     </section>
 
@@ -153,19 +135,37 @@
                 <h1>Book Author</h1>
               </div>
               <div class="book-description">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
-              <div class="book-review">
-                <p></p>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
               </div>
             </div>
+            <div class="book-review-container">
+                <div class="book-stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="book-review" id="">
+                  <p>(11)</p>
+                </div>
+              </div>
           </div>
-        </div>
+        </div> 
     </section>
 
     <section id="page-not-found">
-      <h1>Page not found!</h1>
+      <div class="container" id="">
+          <h1>Page not found!</h1>
+      </div>
+      
     </section>
+
+    <footer id="footer">
+      <div class="container" id="">
+        <h3>MADE BY: EZNM</h3>
+      </div>
+    </footer>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

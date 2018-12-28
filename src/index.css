@@ -12,3 +12,148 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: #ececec;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+  background-color: #fff;
+  padding: 20px 0p ;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0,.1)
+}
+
+#header ul {
+  list-style: none;
+}
+
+#header nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header a {
+  display: block;
+  padding: 15px;
+  color: rgb(43, 1, 51);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#header nav a:hover,
+#header nav a:focus{
+  background-color: rgba(0,0,0,.1)
+}
+
+#header .active a{
+  background-color: rgba(0,0,0,.1)
+}
+ 
+#header .categories{
+ display: flex; 
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0px 20px;
+}
+
+#header .logo{
+  font-size: 2em;
+  padding: 0px;
+}
+
+/* Book Section */
+
+#books-section, #book-detail, #page-not-found{
+  margin: 50px 0px;
+}
+
+.section-title{
+  padding: 20px 0px;
+}
+
+.books-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 15px;
+}
+
+#books-section .book{
+  box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+  background-color: #fff;
+}
+
+#books-section .book-img img{
+  width: 100%;
+  height: 200px;
+}
+
+#books-section .book-info{
+  padding: 10px;  
+}
+
+#books-section .book-title{
+  padding: 10px;
+}
+
+#books-section .book-author{
+  padding: 5px;
+}
+
+.btn{
+  padding: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px 0px;
+  opacity: 0.9;
+}
+.btn:hover, .btn:focus{
+  opacity: 1;
+}
+
+
+.btn-highlight{
+  background: blueviolet;
+  color: white;
+}
+
+#book-detail .book-container{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-gap: 20px;
+}
+
+/* #book-detail .book-title{
+  padding-bottom: 20px;
+}
+
+#book-detail .book-author{
+  padding-bottom: 15px; 
+} */
+
+#book-detail .book-review-container{
+  display:flex;
+  font-size: 1.2em;
+  justify-content: flex-end;
+}
+
+#book-detail .book-review-container .book-review{
+  margin-left:  5px;
+}
+
+#book-detail .book-review-container .book-stars{
+  color: yellowgreen;
+}
+ 
+#footer{
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 20px;
+}
+
