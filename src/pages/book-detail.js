@@ -1,8 +1,12 @@
 import React from 'react';
+import Header from '../components/header';
+import Footer from '../components/footer';
 
 let BookDetail = (props) => {
     return(
-        <section id="book-detail">
+        <div className="has-fixed-footer">
+            <Header/>
+            <section id="book-detail">
             <div className="container">
                 <div className="book-container">
                     <div className="book-img">
@@ -33,7 +37,10 @@ let BookDetail = (props) => {
                     </div>
                 </div>
             </div> 
-        </section>
+            </section>
+            <Footer/>
+        </div>
+        
     )
 }
 
