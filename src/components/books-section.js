@@ -5,9 +5,9 @@ let BooksSection =(props) => {
         <section id="books-section">
         <div className="container">
             <div className="section-title">
-                <h1>HTML BOOKS</h1> 
+                <h1>{props.title + " BOOKS"}</h1> 
             </div>
-            <BooksContainer/>        
+            <BooksContainer books={props.books}/>        
         </div>
     </section>
     )

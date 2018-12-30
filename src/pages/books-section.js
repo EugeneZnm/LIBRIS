@@ -3,14 +3,18 @@ import BooksSection from '../components/books-section';
 import Header from '../components/header';
 import Footer from '../components/footer';
 let BooksSectionPage = (props) => {
+    let books = [1,2,3,4,5]
     return(
         <div className="has-fixed-footer">
             <Header/>
-            <BooksSection/>
+            <BooksSection title={props.categoryName} books={books}/>
             <Footer/>    
         </div>
     
     )
 }
 
+BooksSectionPage.defaultProps ={
+    categoryName: "HTML",
+}
 export default BooksSectionPage;
