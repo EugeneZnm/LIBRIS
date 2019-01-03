@@ -15,6 +15,7 @@ class BooksSectionPage extends Component {
         }
     }
 
+    // ajax call for feeding getting book details from API
     componentDidMount(){
         axios.get("https://www.googleapis.com/books/v1/volumes?q=" + this.props.categoryName + "&key=AIzaSyBzXK4qvC_w2HzHdro30RsoknE204BUBZA").then((response)=> {
             this.setState({
@@ -22,6 +23,20 @@ class BooksSectionPage extends Component {
                 isLoading: false,
             })
         })
+    }
+
+        // ajax call for updating component when categories change
+    componentDidUpdate(previousProps){
+        if(previousProps.categoryName !== this.props.categoryName)
+            this.setState({
+                isLoading: true,
+            })
+            axios.get("https://www.googleapis.com/books/v1/volumes?q=" + this.props.categoryName + "&key=AIzaSyBzXK4qvC_w2HzHdro30RsoknE204BUBZA").then((response)=> {
+                this.setState({
+                    books:response.data.items,
+                    isLoading: false,
+                })
+            })    
     }
 
      render(){

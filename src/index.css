@@ -110,11 +110,13 @@ body {
   cursor: pointer;
   margin: 10px 0px;
   opacity: 0.9;
+  text-decoration: none;
+  display: inline-block;
 }
+
 .btn:hover, .btn:focus{
   opacity: 1;
 }
-
 
 .btn-highlight{
   background: blueviolet;
