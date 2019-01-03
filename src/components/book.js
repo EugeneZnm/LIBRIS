@@ -1,6 +1,7 @@
 import React from 'react';
 
 let Book = (props) => {
+    console.log(props.book)
     return (
         <div className="book">
             <div className="book-img">
