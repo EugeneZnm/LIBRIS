@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 // importing browser router switch and route from react router dom
 import {BrowserRouter, Switch, Route}  from 'react-router-dom';
-import Header from '../src/components/header';
-import Footer from '../src/components/footer';
 import BooksSectionPage from '../src/pages/books-section';
 import BookDetailPage from './pages/book-detail';
 import PageNotFound from './pages/page-not-found';
@@ -17,7 +15,10 @@ class App extends Component {
             let {categoryName} = props.match.params;
             return <BooksSectionPage categoryName={categoryName}/>
             }}/>
-          <Route path="/book/:bookID" component={BookDetailPage}/>
+          <Route path="/book/:bookID" render={(props) => {
+            let {bookID} = props.match.params;
+            return <BookDetailPage bookID={bookID}/>
+          }}/>
           <Route component={PageNotFound}/>
         </Switch>
       </BrowserRouter>

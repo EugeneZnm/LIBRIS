@@ -2,12 +2,12 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 let Book = (props) => {
-
+    console.log(props.book)
         // variable to access information on books from api
     let bookInfo = {
-        image: props.book.volumeInfo.imageLinks.thumbnail,
+        image: props.book.volumeInfo.imageLinks? props.book.volumeInfo.imageLinks.thumbnail: "https://via.placeholder.com/350x150",
         title:props.book.volumeInfo.title,
-        // author:props.book.volumeInfo.authors[0],
+        author:props.book.volumeInfo? props.book.volumeInfo.authors:"Author Unknown",
         id:props.book.volumeInfo.id,
     }
     return (
@@ -18,12 +18,12 @@ let Book = (props) => {
             <div className="book-info">
                 <div className="book-title">
                     <h3>{bookInfo.title}</h3>
-                </div>
+                </div> 
                 <div className="book-author">
                     <p><em>{bookInfo.author}</em></p>
                 </div>
                 <div className="book-call-to-action">
-                    <Link to={"book/" + bookInfo.id} className="btn btn-highlight">Detail</Link> 
+                    <Link to={"/book/" + bookInfo.id} className="btn btn-highlight">Detail</Link> 
                 </div>
             </div>
         </div>
